@@ -1,27 +1,217 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Миний Товч CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Зоригтбаатарын хувийн portfolio болон Web Development Lab сайт.">
+    <title>Зоригтбаатар | Web Development Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- Үндсэн гарчиг -->
- <h1>Нэр: Зоригтбаатар </h1>
- <!-- Товч танилцуулга -->
- <p>Шинжлэх ухаан технологийн их сургуулийн  2-р курсын оюутан. Вэб хөгжүүлэлт болон шинэ
-технологиудыг сонирхон судалдаг.</p>
- <h2>Эзэмшсэн чадварууд</h2>
- <!-- Жагсаалт -->
- <ul>
- <li>HTML5 & CSS3 үндэс</li>
- <li>Git & GitHub хувилбар удирдлага</li>
- <li>Программчлалын  хэл python</li>
- </ul>
- <h2>Холбоо барих</h2>
- <!-- Холбоос -->
- <p>Миний GitHub профайлтай танилцах:
- <a href="https://github.com" target="_blank">GitHub Холбоос</a>
- </p>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <header class="header" id="home">
+        <nav class="nav container">
+            <a class="logo" href="#home" aria-label="Нүүр хуудас">Z<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Цэс нээх" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Нүүр</a>
+                <a href="#about">Тухай</a>
+                <a href="#skills">Чадвар</a>
+                <a href="#projects">Төслүүд</a>
+                <a href="#contact">Холбоо</a>
+                <button class="theme-btn" id="themeToggle" aria-label="Өнгөний горим солих">☼</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container reveal">
+            <div class="hero-text">
+                <div class="eyebrow"><span class="status-dot"></span> Web Development Lab</div>
+                <h1>Сайн байна уу,<br><span class="gradient-text">Зоригтбаатар</span> байна.</h1>
+                <p class="hero-description">
+                    ШУТИС-ийн 2-р курсын оюутан. Вэб хөгжүүлэлт, программчлал болон шинэ технологиудыг
+                    сонирхон судалж, өдөр бүр шинэ зүйл бүтээхийг зорьдог.
+                </p>
+
+                <div class="typing-line">
+                    <span>I'm a </span><strong id="typingText"></strong><span class="cursor">|</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a class="btn primary" href="#projects">Миний төслүүд <span>↗</span></a>
+                    <a class="btn secondary" href="https://github.com/zorigoo0523" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="avatar">Z</div>
+                <div class="hero-card-info">
+                    <span>PROFILE</span>
+                    <h3>Зоригтбаатар</h3>
+                    <p>Student • Developer</p>
+                </div>
+                <div class="code-window">
+                    <div class="window-top"><span></span><span></span><span></span></div>
+                    <pre><code><span class="purple">const</span> developer = {
+  name: <span class="green">"Зоригтбаатар"</span>,
+  skills: [<span class="green">"HTML"</span>, <span class="green">"CSS"</span>,
+           <span class="green">"JavaScript"</span>],
+  goal: <span class="green">"Keep building 🚀"</span>
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats container reveal" aria-label="Товч мэдээлэл">
+            <div class="stat-card"><strong>02+</strong><span>Course</span></div>
+            <div class="stat-card"><strong>03+</strong><span>Core Skills</span></div>
+            <div class="stat-card"><strong>∞</strong><span>Curiosity</span></div>
+            <div class="stat-card"><strong>24/7</strong><span>Learning Mode</span></div>
+        </section>
+
+        <section class="section container reveal" id="about">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">01 / ABOUT</span>
+                    <h2>Товчхон <span>миний тухай</span></h2>
+                </div>
+                <p>Суралцах → турших → бүтээх гэсэн циклээр хөгжиж байна.</p>
+            </div>
+
+            <div class="about-grid">
+                <article class="about-card large">
+                    <span class="card-icon">✦</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        HTML5, CSS3-ийн үндсийг ашиглан веб хуудас бүтээж, JavaScript ашиглан
+                        интерактив үйлдлүүд нэмэх чиглэлээр суралцаж байна.
+                    </p>
+                </article>
+                <article class="about-card">
+                    <span class="card-icon">⌘</span>
+                    <h3>Version Control</h3>
+                    <p>Git болон GitHub ашиглан кодоо хадгалж, өөрчлөлтөө удирдаж сурч байна.</p>
+                </article>
+                <article class="about-card">
+                    <span class="card-icon">◉</span>
+                    <h3>Next Step</h3>
+                    <p>Илүү бодит төсөл, responsive UI, JavaScript DOM болон API-тай ажиллах чадвараа нэмэгдүүлэх зорилготой.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container reveal" id="skills">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">02 / SKILLS</span>
+                    <h2>Эзэмшсэн <span>чадварууд</span></h2>
+                </div>
+                <p>Одоогийн түвшнээсээ тасралтгүй ахиулж байгаа skill set.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-top"><span class="skill-number">01</span><span class="skill-tag">FOUNDATION</span></div>
+                    <h3>HTML5</h3>
+                    <p>Semantic structure, headings, lists, links, forms.</p>
+                    <div class="progress"><span style="width: 88%"></span></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-top"><span class="skill-number">02</span><span class="skill-tag">DESIGN</span></div>
+                    <h3>CSS3</h3>
+                    <p>Layout, Flexbox, Grid, animation, responsive design.</p>
+                    <div class="progress"><span style="width: 82%"></span></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-top"><span class="skill-number">03</span><span class="skill-tag">LOGIC</span></div>
+                    <h3>JavaScript</h3>
+                    <p>DOM, events, validation and interactive UI.</p>
+                    <div class="progress"><span style="width: 65%"></span></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-top"><span class="skill-number">04</span><span class="skill-tag">VERSION</span></div>
+                    <h3>Git & GitHub</h3>
+                    <p>Repository management, commits, branches and deployment.</p>
+                    <div class="progress"><span style="width: 74%"></span></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container reveal" id="projects">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">03 / PROJECTS</span>
+                    <h2>Миний <span>ажлууд</span></h2>
+                </div>
+                <p>Сурсан зүйлээ бодит жижиг төслүүдээр баталгаажуулж байна.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-visual visual-one"><span>&lt;/&gt;</span></div>
+                    <div class="project-content">
+                        <div class="project-meta"><span>01</span><span>HTML • CSS • JS</span></div>
+                        <h3>Web Development Lab</h3>
+                        <p>Лабораторийн ажлууд болон веб хөгжүүлэлтийн дасгалуудыг нэг дор цэгцэлсэн төсөл.</p>
+                        <a href="https://github.com/zorigoo0523/web-development-lab" target="_blank" rel="noopener noreferrer">Repository харах ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual visual-two"><span>01</span></div>
+                    <div class="project-content">
+                        <div class="project-meta"><span>02</span><span>COMING SOON</span></div>
+                        <h3>Next Project</h3>
+                        <p>JavaScript ашигласан илүү интерактив веб аппликейшн энд нэмэгдэнэ.</p>
+                        <button class="text-btn" id="projectIdeaBtn">Санаа харах →</button>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual visual-three"><span>{ }</span></div>
+                    <div class="project-content">
+                        <div class="project-meta"><span>03</span><span>LEARNING</span></div>
+                        <h3>Code Journey</h3>
+                        <p>Шинэ технологи, алгоритм болон frontend туршилтуудаа энд аажмаар цуглуулна.</p>
+                        <a href="#skills">Skill stack харах →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container reveal" id="contact">
+            <div class="contact-box">
+                <div class="contact-copy">
+                    <span class="section-label">04 / CONTACT</span>
+                    <h2>Хамтдаа ямар нэг зүйл <span>бүтээцгээе.</span></h2>
+                    <p>Доорх жижиг form-оор мессеж бичих эсвэл GitHub профайлтай танилцаарай.</p>
+                    <a class="github-pill" href="https://github.com/zorigoo0523" target="_blank" rel="noopener noreferrer">github.com/zorigoo0523 ↗</a>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <label>Нэр<input id="name" type="text" placeholder="Таны нэр" required></label>
+                    <label>Мессеж<textarea id="message" placeholder="Сайн байна уу..." rows="4" required></textarea></label>
+                    <button class="btn primary" type="submit">Мессеж илгээх <span>↗</span></button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Зоригтбаатар. Built with HTML, CSS & JavaScript.</p>
+            <a href="#home">Дээшээ ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
